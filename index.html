@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do App Crud</h1>
+
+        <div class="task-form">
+            <h2>Add/Edit Task</h2>
+            <form id="taskForm">
+                <input type="hidden" id="taskId">
+                <div class="form-group">
+                    <label for="taskName">
+                        Task name:
+                        <input type="text" id="taskName" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="taskType">
+                        Task type:
+                        <select id="taskType" required>
+                            <option value=""></option>
+                            <option value="">Personal</option>
+                            <option value="">Work</option>
+                            <option value="">Study</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="taskDesc">
+                        Description:
+                        <textarea id="taskDesc"></textarea>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="taskColor">
+                        Background color:
+                        <input type="color" id="taskColor">
+                    </label>
+                </div>
+                <div class="form-buttons">
+                    <input type="submit" id="saveBtn" value="Save task">
+                    <input type="reset" id="clearFormBtn" value="Clear form">
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+</body>
+</html>
